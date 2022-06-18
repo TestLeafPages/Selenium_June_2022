@@ -6,6 +6,7 @@ Assignment #1: (Strings)
 https://github.com/TestLeafPages/SeleniumAssignments/blob/master/week1/day2/assignments/mandatory/Palindrome.java
 
 https://github.com/TestLeafPages/SeleniumAssignments/blob/master/week1/day2/assignments/optional/Anagram.java
-https://github.com/TestLeafPages/SeleniumAssignments/blob/master/week1/day2/classroom/string/CharOccurance.java
+
 https://github.com/TestLeafPages/SeleniumAssignments/blob/master/week1/day2/classroom/string/FindTypes.java
+
 https://github.com/TestLeafPages/SeleniumAssignments/blob/master/week1/day2/assignments/mandatory/ReverseEvenWords.java
