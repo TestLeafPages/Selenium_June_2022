@@ -1,0 +1,15 @@
+Basics
+1. Attribute based xpath
+//tagname[@attribute = 'value']
+//label[@for = 'username']
+2. Partial Attribute based xpath
+//tagname[contains(@attribute,'value')]
+//label[contains(@for,'name')]
+3. Text Based Xpath
+//tagname[text() = 'value']
+//label[text() = 'Username']
+4. Partial text based xpath
+//tagname[contains(text(),'value')]
+//label[contains(text(), 'User')]
+5. Collections
+(xpath)[index]
