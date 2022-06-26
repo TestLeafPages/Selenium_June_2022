@@ -25,7 +25,8 @@ public class Land implements HousePlan{
 		HousePlan obj1 = new Land();
 		obj1.buildBedroom("1");
 		obj1.buildMasterBedroom();
-		obj1.buildKennel();
+		
+		
 	}
 	
 	
