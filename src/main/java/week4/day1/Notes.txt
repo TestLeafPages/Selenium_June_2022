@@ -1,0 +1,105 @@
+Selenium Basics
+select class
+xpath basics
+Xpath axes
+Webtable/findelements
+
+Not completed topics
+Waits
+Actions
+Targetlocators
+Snapshots
+
+
+Locators
+id, class, name, linktext, p linktext, xpath
+
+1.Absolute xpath - /
+2.Relative xpath - //
+
+	2.1. Basic
+	2.2. Axes
+Basics
+1. Attribute based
+2. Partial Attribute based
+3. Text based
+4. Partial Text based
+5. Collections
+
+Axes
+1. Parent -> Child
+Syntax: parentxpath/child tagname or child xpath
+//p[@class='top']/label
+
+2. Child -> Parent
+Syntax: child xpath/parent:: parent tagname or xpath
+//p[@class='top']/parent::form
+
+3. GrandParent -> GrandChild
+Syntax: Grandparent xpath//Grand child tagname or Grand child xpath
+//form[@id='login']//label
+//form[@id='login']//label[@for='username']
+
+4. GrandChild -> GrandParent
+// Grand child Xpath/ancestor:: GrandParent tagname or xpath
+//label[@for='username']/ancestor::form
+
+5. Elder Sibling -> younger Sibling
+Syntax: Elder Sibling xpath/following-sibling::younger Sibling tagname or xpath
+//label[@for='username']/following-sibling::input
+
+6. Younger Sibling -> Elder Sibling
+Syntax: Younger Sibling xpath/preceding-sibling::Elder Sibling tagname or xpath
+//input[@id='username']/preceding-sibling::label
+
+7. Elder Cousin -> Younger Cousin
+Syntax: Elder Cousin xpath/following::Younger Cousin tagname or xpath
+//input[@id='username']/following::label
+
+8. Younger Cousin -> Elder Cousin
+Syntax:Younger Cousin xpath/preceding::Elder Cousin tagname or xpath
+//label[@for='password']/preceding::input
+
+
+
+
+
+Actions
+type -> WebElement.sendKeys(arg) -> CharSequence -> "text" + ENTER, TAB, SHIFT key -> void
+click -> WebElement.click() -> void
+getText -> WebElement.getText() -> String
+typeText -> WebElement.getAttribute("value") -> String
+WebElement.isSelected() -> button (radio/checkbox) -> boolean
+WebElement.isEnabled() -> button/input -> boolean
+WebElement.isDisplayed() -> any WebElement -> boolean
+
+driver.get() -> loading an URL -> void
+driver.getTitle() -> String 
+driver.getCurrentURL() -> String
+driver.manage().window().maximize(); -> void
+driver.manage().window().minimize(); -> void
+driver.close(); -> void
+driver.navigate().to(url); -> load the url -> void
+driver.navigate().back(); -> go back to previous page -> void
+driver.navigate().forward(); -> go back to next page -> void
+driver.navigate().refresh(); -> Refresh the current page -> void
+
+
+Webdriver -> Interface
+RemoteWebdriver -> Implements Webdriver
+ChromiumDriver extends RemoteWebdriver
+ChromeDriver & EdgeDriver extends ChromiumDriver
+Firefox, Safari, Opera & IE driver extends RemoteWebDriver
+
+
+Table Design in HTML
+<table>
+
+<thead>
+<tbody>
+<tr> <th></th> <th></th> </tr>
+<tr> <td></td> <td></td> </tr>
+<tr> <td></td> <td></td> </tr>
+</tbody>
+</table>
+
