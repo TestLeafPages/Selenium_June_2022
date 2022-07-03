@@ -103,3 +103,168 @@ Table Design in HTML
 </tbody>
 </table>
 
+
+
+
+**********************************************************************************************************
+Week 4 day 2
+Targetlocators
+Some area where we do not directly access or it is a spl scenario
+1. Alert
+Alert is basically designed and developed from JS
+Alert is not inspectable
+When the alert is populated, the entire DOM will be frozen ->
+Alert can not be ignored, So alert must be handled
+There can be only one alert populated at a time
+
+Alert components
+Alert Text - getText()
+1 or 2 Buttons - Click -> Positive -> accept() & Negative -> dismiss()
+Text field (Single) - type -> sendKeys(String)
+
+Types of alert
+1. Simple Alert - Message - Ok
+2. Confirm Alert - Message - Yes/No
+3. Prompt Alert - Message - Text field - 1 or 2 buttons
+
+
+Technically
+Alert is an interface
+RemoteAlert is the implementation class for alert
+accept()
+dismiss()
+getText()
+sendKeys(String)
+
+simple alert -> you can accept or dismiss
+
+Exception:
+NoAlertPresentException - No alert available but you have written a code
+to handle alert
+UnhandledAlertException - There will be an alert, but you missed to handle 
+the alert
+---------------------------------------------------------------------------------
+2. Frames
+Frame is an html page, used to create partitions in the html page
+<frame>
+<iframe> - used to develop the frames in html
+There can be multiple frames in a single page
+
+ways to switch
+index -> index starts from 0 - int
+idOrName - <iframe id = "idValue" name = "nameValue"> - Value - String
+WebElement - <iframe> - WebElement
+
+
+
+
+
+1000ft
+House - html page
+Main webpage - Living room - Hall
+Mobile -> Bedroom
+Move -> hall - bedroom
+pick up the call - end the call
+Come out the bed room to hall
+Continue with the task
+
+Towel - bathroom
+bathroom - bedroom
+bedroom is in hall
+
+Hall - bedroom - bathroom -> bedroom -> hall
+bathroom -> bedroom -> parentFrame()
+bathroom -> hall -> defaultContent()
+
+Exception
+NoSuchFrameException -> driver.switchTo().frame(5);
+---------------------------------------------------------------------------------
+3. Windows
+
+
+There is no unique locator for the windows
+There can be multiple windows on the same time
+Team Selenium -> to create a unique alpha numeric id for all the new window
+
+driver.getWindowHandle() - > get the unique id of the current focused - String
+driver.getWindowHandles() - > get all the unique id of the windows opened under
+the current session - Set<String> - LinkedHashSet() - maintain the order in 
+which the browser windows are opened
+
+Run1: CDwindow-E28BA0ECECFC318005C5AC1FD39ED313
+Run2: CDwindow-7E18269B3318850184336CB3344E42EC
+
+Exception:
+NoSuchWindowException
+
+Snapshot
+Selenium can take snap only where dom is available
+
+
+Waits
+Selenium will start the interaction, once the entire page is loaded
+
+1. Implicit Wait
+* work only for findElement(), findElements()
+* one time declaration
+* 30 Seconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Explicit Wait
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
