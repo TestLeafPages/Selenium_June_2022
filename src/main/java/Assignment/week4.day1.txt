@@ -1,21 +1,17 @@
 Assignment 1:
 ============
 1. Launch https://www.snapdeal.com/
-2. Go to Mens Fashion
-3. Go to Sports Shoes
-4. Get the count of the sports shoes
-5. Click Training shoes
-6. Sort by Low to High
-7. Check if the items displayed are sorted correctly
-8.Select the price range (900-1200)
-9.Filter with color Navy 
-10 verify the all applied filters 
-11. Mouse Hover on first resulting Training shoes
-12. click QuickView button
-13. Print the cost and the discount percentage
-14. Take the snapshot of the shoes.
-15. Close the current window
-16. Close the main window
+2. Search on  Training Shoes
+3. Get the count of the Training Shoes
+4. Click on Sort by  and select Low to High
+5. Check if the items displayed are sorted correctly
+6. Select the price range (900-1500)
+7. Filter with color Blue 
+8. Verify the Blue check box is enabled
+9.Click on first resulting Training shoes
+10. Print the cost and the discount percentage
+11. Take the snapshot of the shoes.
+12. Close the  window
 
 
 Assignment for Webtable :
