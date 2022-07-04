@@ -17,7 +17,7 @@ Assignment 1:
 Assignment for Webtable :
 ==================
 1.http://www.leafground.com/pages/table.html 
-2.http://www.leafground.com/pages/sorttable.html
+
 
 *Note the instructions(pseudocode) are given below the  table given in the application
 
