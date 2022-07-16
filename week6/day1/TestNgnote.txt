@@ -1,0 +1,101 @@
+TestNG FrameWork
+================
+-Execution Framework
+--To execute multiple testcases in a single run..
+
+Cedric Beust-->Junit and NUniit
+
+-Supports Sequential and Parallel Execution
+-Status of the test Execution-Pass/Failure
+-Generates the report->Execution Summary-Emailable report and index.html
+-Supports Cross browser Testing
+-Supports Multi-language application to automate
+-Supports Data-Driven Concept-Pass different test data into the application
+-To control the flow of execution using -annotations and attributes
+-Rerun the failed testcases automatically using Listeners
+-Assert your testcases-verify or validate the testcases
+
+
+
+Steps to Convert Multiple Testcases
+
+Select the Testcase
+Right Click->TestNG-->Convert To TestNG
+testng.xml
+
+<suite>-->top layer /uppermost layer of your application
+<test>-->Modules-->Leads,Contacts
+<classes>-->testcases of each module
+
+Thread-Count-->to exceute the testcases in different path
+
+verbose->print the error in the console when the execution is from testng.xml
+=====================================================
+
+2 Types of report
+test-output folder
+
+emailable report
+index.html
+
+Annotations are set of code to control flow of execution
+
+Hirerachy of  annotation
+=====================
+@BeforeSuite-->To start generate report
+@BeforeTest-->Test details
+@BeforeClass-->db /test inputs
+@BeforeMethod-->preconditions steps
+@Test-->test steps
+@AfterMethod-->post condition
+@AfterClass->closingdb
+@AfterTest-->End of test report
+@AfterSuite-->closing the report
+
+
+BeforeSuite
+BeforeTest
+BeforeClass
+Before Method
+Testcase
+AfterMethod
+Before Method
+Testcase2
+AfterMethod
+AfterClass
+After Test
+=============
+BeforeSuite
+BeforeTest
+BeforeClass
+Before Method
+Testcase
+AfterMethod
+AfterClass
+After Test
+
+
+xml-->@Test--->@Before annotation
+===================================
+Attributes
+======
+
+priority->default value =0 ->to prioritze the @Test method for execution
+
+enabled->ignore the testcase from the execution
+default value ->true
+
+invocationCount-->to call the same method multiple times
+default value -->1
+
+threadPoolSize-->comes along invocationCount to control the threads 
+default value-->0
+
+invocationTimeOut-Maximum time limit for all the invocationCounts set to the @Test method
+===============================================================
+
+
+
+
+
+
