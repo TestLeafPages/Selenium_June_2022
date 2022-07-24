@@ -1,0 +1,30 @@
+Self Assessment:
+----------------
+1. What are the layers in Cucumber automation?
+		Gherkin, StepDefinition & Runner
+	
+2. What is the CucumberOptions attribute to integrate StepDefinition?
+		glue = "package name of StepDefinition"
+	
+3. What is the significance of monochrome?
+        Remove the junk characters from console log
+	
+4. What is the attribute to generate cucumber report?
+		publish = true
+	
+5. What are the gherkin keywords used to pass multiple data to the scenario?
+		Scenario Outline & Examples
+	
+6. What is the gherkin keyword to setup common preCondition for the scenarios 
+   in a feature file?
+		Background
+	
+7. What is exception for more than one implementation for a step?
+		DuplicateStepDefinitionException
+	
+8. What is the exception for the step if it is not defined in StepDefinition?
+		UnDefinedStepException
+		
+9. What is the TestNG class used for the runner?
+		AbstractTestNGCucumberTests
+	

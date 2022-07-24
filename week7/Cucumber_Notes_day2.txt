@@ -1,0 +1,38 @@
+Steps to implement multiple StepDefinition:
+-------------------------------------------
+1. Create a BaseClass -> used to have common variables and methods
+2. Declare the ChromeDriver as static Global variable in BaseClass 
+3. All the StepDefinition classes should extends BaseClass
+4. Remove the ChromeDriver declaration from StepDefinition class
+
+Limitation of Background: Applicable for single feature file. We can not have common 
+background for all the feature file
+
+- There is no Gherkin keyword for postCondition
+
+Steps to implement common preCondition and postCondition using TestNG annotations:
+==================================================================================
+1. Create preCondition() and postCondition() methods in BaseClass with @BeforeMethod and 
+   @AfterMethod respectively
+2. BaseClass should extends AbstractTestNGCucumberTests
+3. CucumberRunner should extends BaseClass 
+4. Remove the Background steps in feature files and 
+   implementation code from StepDefinitions
+   
+Tags -> Used to categorize the scenarios
+
+Tags Naming Convention:
+-----------------------
+- We can use module names (eg: Leads, Accounts, Opportunities etc)
+- We can use testcase types (eg: smoke, regression, functional etc)
+
+
+Groups -> Used to categorize the testcases in TestNG
+
+Retry Failed Testcases:
+--------------------------
+IRetryAnalyzer -> Interface
+
+Step1: Create an implementation class for IRetryAnalyzer
+Step2: Implement retry method
+Step3: apply retryAnalyzer in each testcase
