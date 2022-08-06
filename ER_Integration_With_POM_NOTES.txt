@@ -1,0 +1,35 @@
+Steps to Integrate ExtentReport to POM:
+---------------------------------------
+1. Create startReport() in BaseClass with the common code for all the testcases (first 4 lines of code)
+2. Apply @BeforeSuite for startReport()
+3. Declare ExtentReports as global variable
+4. Create testcaseDetails() in BaseClass
+	- Add the testcases details ExtentReport code into the method
+5. Declare the ExtentTest as global variable ( Remove the local declaration)
+6. Create 4 global variables in BaseClass for the below informations
+        - testName
+        - testDescription
+        - testCategory
+        - testAuthor
+7. Replace the hardcoded value with  the respective variables	
+8. Create stopReport() and add extent.flush() with @AfterSuite	
+9. Assign the appropriate values for the global variables in setData() in each testcase
+		 - testName
+        - testDescription
+        - testCategory
+        - testAuthor
+	
+10. Apply @BeforeClass for testcaseDetails()
+11. Create reportStep() in BaseClass with condition to use pass() / fail()
+12. Surround with try/catch for the codes in the pages
+13. Call the reportStep() with pass status from try block
+14. Call the reportStep() with fail status from catch block
+15. Create takeSnap() in BaseClass with target file name with Random number and return Random Number
+16. Call the takeSnap() before calling pass() & fail() and get Random number. Append the file name with
+    Random number in MediaEntityBuilder
+17. Create node in @BeforeMethod and declare the node as global variable
+18. In reportStep() use node.pass() and node.fail() to get the seperate report for each data set
+	
+
+
+
